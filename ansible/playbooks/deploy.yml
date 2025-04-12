@@ -1,0 +1,12 @@
+- name: Deploy HTML to web server
+  hosts: webservers
+  become: yes
+
+  tasks:
+    - name: Copy HTML files
+      copy:
+        src: "{{ playbook_dir }}/../../app/"
+        dest: /var/www/html/
+        owner: root
+        group: root
+        mode: '0755'
