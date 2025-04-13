@@ -4,7 +4,7 @@ pipeline {
   stages {
     stage('Checkout') {
       steps {
-        git url: 'https://github.com/your-user/devops-deploy-demo.git' // Replace with your repo
+        git url: 'https://github.com/wbkhan/jenkins.git' // Replace with your repo
       }
     }
 
